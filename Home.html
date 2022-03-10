@@ -213,6 +213,18 @@
   </header>
 
   <main>
+    
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+      <div class="container">
+        🔴 Assista ao vivo 🔴 Live de lançamento do <strong>Squad Viagens!</strong>
+        <a href="https://youtu.be/AjqJIJVZnhM" class="alert-link">
+          Clique aqui.
+        </a>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    </div>
 
     <!-- CAROUSEL -->
     <div id="fullwidthcarousel" class="carousel slide carousel-fade" data-ride="carousel">
@@ -226,28 +238,30 @@
       </ol>
       <div class="carousel-inner">
 
-        <!-- <div class="carousel-item">
-          <a href="https://voudesquad.com.br/lollapalooza-2022.html">
-            <img class="d-block w-100" src="https://res.cloudinary.com/squad-rally/image/upload/c_fill,g_xy_center,h_400,w_1920,y_850/v1645736522/LP/Lollapalooza2022/lollapalooza_bg.jpg" alt="Slide Lollapalooza" style="filter: brightness(70%) saturate(90%);">
-            <div id="carousel-caption" class="carousel-caption">
-              <div id="carousel-tittle">Lollapalooza 2022</div>
+        <div class="carousel-item active" target="_blank">
+          <a href="https://voudesquad.com.br/lollapalooza2022.html">
+            <img class="d-block w-100" src="https://res.cloudinary.com/squad-rally/image/upload/v1646339119/LP/Lollapalooza2022/moldura-1.png" alt="Slide Lollapalooza" style="z-index: 2; position: absolute; height: 400px; width: 1920px; object-fit: unset;">
+            <img src="https://res.cloudinary.com/squad-rally/image/upload/v1646339116/LP/Lollapalooza2022/direita-1.png" class="bg-lolla-right" alt="right">
+            <img src="https://res.cloudinary.com/squad-rally/image/upload/v1646339116/LP/Lollapalooza2022/esquerda-1.png" class="bg-lolla-left" alt="left">
+            <img class="d-block w-100" src="https://res.cloudinary.com/squad-rally/image/upload/c_fill,h_400,w_1920/v1646339116/LP/Lollapalooza2022/banner-1.png" alt="Slide Lollapalooza">
+            <div id="carousel-caption" class="carousel-caption" style="max-width: 900px;">
+              <div style="width: 100%; text-align: left; margin-top: 20px;">
+                <img id="img-banner-lolla" src="https://res.cloudinary.com/squad-rally/image/upload/v1646339118/LP/Lollapalooza2022/logo-lollapalooza.svg" alt="Lollapalooza logo">
+              </div>
               <div id="carousel-date" style="width: 100%;">24, 25 e 26 de março
               </div>
-              <div id="carousel-price">
-                <span style="color: #fff; font-family: 'Mager'; font-size: 14px; margin-right: 10px; text-align: left;">Ida e Volta a partir de</span><br>
-                <span style="color: #fff; font: 400 55px/45px'Halbfett'; text-align: right;">
-                <span style="font-size: 18px; vertical-align: super;">R$</span>110<span style="font-size: 18px; vertical-align: super;">,00</span>
-                </span>
+              <div>
+                <img id="img-banner-lolla-transfer" src="https://res.cloudinary.com/squad-rally/image/upload/v1646339118/LP/Lollapalooza2022/Lolla_Transfer-1.png" alt="">
+                <img id="img-banner-lolla-transfer-mob" src="https://res.cloudinary.com/squad-rally/image/upload/v1646339118/LP/Lollapalooza2022/Lolla_Transfer-1.png" alt="">
               </div>
-              <div style="font: 600 18px/21px 'Mager'; text-align: left; margin-left: 10px;">Pague em <br>até 6x <br>sem juros</div> 
               <div style="width: 100%; height: 10px;"></div>
-              <div id="carousel-button" style="max-width: max-content; margin-top: 0;"><input type="button" class="btn-rounded_primary-default" style="margin: 0px;" value="Clique aqui"></div>
+              <div id="carousel-button" style="max-width: max-content; margin-top: 0;"><input type="button" class="btn-rounded_primary-default" style="margin: 0px; background-color: #FF40B4;" value="Comprar Bilhete"></div>
               <div style="width: 100%; margin-bottom: 10px;"></div>
             </div>
           </a>
-        </div> -->
+        </div>
 
-        <div class="carousel-item active">
+        <!-- <div class="carousel-item">
           <a href="http://www.squadviagens.com.br" target="_blank">
             <img class="d-block w-100" src="https://res.cloudinary.com/squad-rally/image/upload/v1646675003/LP/Home/banner_squad-viagens.jpg" alt="Slide Squad Viagens">
             <div id="carousel-caption" class="carousel-caption" style="max-width: 100%; justify-content: center; left: 15%;
@@ -262,7 +276,7 @@
               </div>
             </div>
           </a>
-        </div>
+        </div> -->
 
         <div class="carousel-item">
           <a href="https://voudesquad.com.br/Eventos-SP.html#HopiHari" target="_blank">
@@ -377,7 +391,7 @@
       </a>
     </div>
 
-    <!-- CONTENT -->
+    <!-- CONTENT -->        
 
       <!------------ NAV ESTADOS ------------>
       <div class="nav-estados">
@@ -640,7 +654,7 @@
       </div>
 
       <!------------ BANNERS ------------>
-      <div class="container banners">
+      <div class="container banners standby">
         <div class="slider-banners-wraper">
           <div class="owl-carousel owl-banners owl-theme">
             
@@ -2424,7 +2438,28 @@
       .carousel-indicators { z-index: 1; bottom: 25px; background-color: rgba(0, 0, 0, 0.3); border-radius: 10px; padding: 5px; width: fit-content; margin: auto; }
       .carousel-indicators li { width: 10px; height: 10px; border-radius: 15px; margin-right: 3px; margin-left: 3px; background-color: transparent; border: 1px solid #fff;}
       .carousel-indicators .active { background-color: #1f1f1f;  border: 3px solid #fcb415; }
+      #img-banner-lolla { object-fit: contain; width: 400px; min-height: 0; }
+      #img-banner-lolla-transfer { position: absolute; top: 90px; right: 20px; min-height: 0; width: 400px; }
+      #img-banner-lolla-transfer-mob {  min-height: 0; width: 100%; }
+      .bg-lolla-right {position: absolute; height: 400px; object-fit: unset; right: 0;}
+      .bg-lolla-left {position: absolute; height: 400px; object-fit: unset; left: 0;}
 
+
+    /************
+        ALERT        
+    ************/
+      .alert {
+        position: fixed;
+        top: 62px;
+        width: 100%;
+        z-index: 1000;
+      }
+      .alert-warning {
+        color: #1f1f1f;
+        background-color: #fcb415;
+        border-color: #fdb825;
+        text-align: center;
+      }
 
     /***************
         DESTINOS        
@@ -2686,7 +2721,13 @@
         #carousel-tittle { font: 400 45px/45px "Halbfett"; }
         #carousel-local { font-size: 18px;}
         #carousel-date { font-size: 18px; }
+        #carousel-date-lolla { font-size: 18px; }
         .carousel-price-dividido { max-width: min-content; }
+        #img-banner-lolla { object-fit: contain; width: 300px; min-height: 0; }
+        #img-banner-lolla-transfer { display: none; }
+        #img-banner-lolla-transfer-mob { min-height: 0; width: 100%; }
+        .bg-lolla-right {position: absolute; object-fit: unset; right: unset; left: 100px; bottom: 130px;}
+        .bg-lolla-left {position: absolute;  object-fit: unset; left: unset; right: 100px; bottom: 150px;}
         .home-search-wrapper {  padding: 6px 16px 16px 16px!important;}
         .info-icons p {margin-right: 8px!important; padding: 8px!important;}
         .banner { max-width: 330px; }
@@ -2711,6 +2752,7 @@
         .duvidas-wrapper a { margin: 0;}
         .duvidas-links { justify-content: center;}
         .footer-menu ul li #botao-whatsapp {padding: 8px 16px;}
+        .alert-warning {text-align: left; padding-right: 100px;}
       }
 
       /* Dispositivos small (telefones em modo paisagem, com 576px ou mais) */
@@ -2725,6 +2767,11 @@
         .navbar-collapse { background-color: rgba(000, 000, 000, 0.9); z-index: 2;transform: translateY(-62px); }
         .nav-link { padding: 12px 0px; }
         #carousel-tittle { font: 400 45px/45px "Halbfett"; }
+        #carousel-date-lolla { font-size: 18px; }
+        #img-banner-lolla-transfer { display: none; }
+        #img-banner-lolla-transfer-mob { min-height: 0; width: 100%; }
+        .bg-lolla-right {position: absolute; object-fit: unset; right: unset; left: 300px; bottom: 130px;}
+        .bg-lolla-left {position: absolute;  object-fit: unset; left: unset; right: 300px; bottom: 150px;}
         .titulo {font: 600 45px/40px "Halbfett"; font-size: 2.8125rem;}
       }
 
@@ -2736,6 +2783,10 @@
         #nav-item-hidden { display: none; }
         .navbar-expand-md .navbar-nav .nav-link { padding-right: 1rem; padding-left: 1rem; }
         #carousel-tittle { font: 600 56px/56px "Halbfett"; font-size: 3.5rem; }
+        #img-banner-lolla-transfer { display: none; }
+        #img-banner-lolla-transfer-mob { min-height: 0; width: 50%; }
+        .bg-lolla-right {position: absolute; object-fit: unset; bottom: 130px;}
+        .bg-lolla-left {position: absolute;  object-fit: unset; bottom: 150px;}
         .titulo {font: 600 45px/40px "Halbfett"; font-size: 2.8125rem;}
       }		
 
@@ -2747,6 +2798,7 @@
         .navbar-expand-md .navbar-nav .nav-link { padding-right: 1rem; padding-left: 1rem; }
         .carousel-caption { left: 10%; }
         #carousel-tittle { font: 600 56px/56px "Halbfett"; font-size: 3.5rem; }
+        #img-banner-lolla-transfer-mob { display: none; }
         .titulo {font: 600 45px/40px "Halbfett"; font-size: 2.8125rem;}
       }
 
@@ -2758,12 +2810,14 @@
         .navbar-expand-md .navbar-nav .nav-link { padding-right: 1rem; padding-left: 1rem; }
         .carousel-caption { left: 15%; }
         #carousel-tittle { font: 600 56px/56px "Halbfett"; font-size: 3.5rem;}
+        #img-banner-lolla-transfer-mob { display: none; }
         .titulo {font: 600 45px/40px "Halbfett"; font-size: 2.8125rem;}
       }
 
       /* Dispositivos extra extra large (desktops grandes com 1600px ou mais) */
       @media (min-width: 1600px) { 
         .carousel-caption { left: 22%; } 
+        #img-banner-lolla-transfer-mob { display: none; }
         .titulo {font: 600 45px/40px "Halbfett"; font-size: 2.8125rem;}
       }
 
