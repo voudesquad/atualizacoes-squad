@@ -393,6 +393,11 @@
 
     <!-- CONTENT -->        
 
+    <div class="continer banner-squad-viagens">
+      <img class="banner-squad-viagens-desk" src="https://res.cloudinary.com/squad-rally/image/upload/v1646892249/LP/Home/banner-top-squadviagens.png" alt="Squad Viagens">
+      <img class="banner-squad-viagens-mob" src="https://res.cloudinary.com/squad-rally/image/upload/v1646892249/LP/Home/banner-top-squadviagens-mob.png" alt="Squad Viagens">
+    </div>
+
       <!------------ NAV ESTADOS ------------>
       <div class="nav-estados">
         <div class="container" style="padding: 0;">
@@ -654,7 +659,7 @@
       </div>
 
       <!------------ BANNERS ------------>
-      <div class="container banners standby">
+      <div class="container banners">
         <div class="slider-banners-wraper">
           <div class="owl-carousel owl-banners owl-theme">
             
@@ -2461,6 +2466,16 @@
         text-align: center;
       }
 
+      .banner-squad-viagens {
+        text-align: center;
+        margin: 20px 0;
+      }
+
+      .banner-squad-viagens img {
+        border-radius: 5px;
+        overflow: hidden;
+      }
+
     /***************
         DESTINOS        
     ***************/
@@ -2704,6 +2719,7 @@
       /* Dispositivos extra extra small (telefones em modo retrato, com menos de 385px) */
       @media (max-width: 385px) { 
         .titulo {font: 600 32px/40px "Halbfett"; font-size: 2rem;}
+        .banner-squad-viagens-desk { display: none;}
       }
 
       /* Dispositivos extra small (telefones em modo retrato, com menos de 576px) */
@@ -2753,6 +2769,9 @@
         .duvidas-links { justify-content: center;}
         .footer-menu ul li #botao-whatsapp {padding: 8px 16px;}
         .alert-warning {text-align: left; padding-right: 100px;}
+        
+        .banner-squad-viagens-desk { display: none; }
+
       }
 
       /* Dispositivos small (telefones em modo paisagem, com 576px ou mais) */
@@ -2773,6 +2792,8 @@
         .bg-lolla-right {position: absolute; object-fit: unset; right: unset; left: 300px; bottom: 130px;}
         .bg-lolla-left {position: absolute;  object-fit: unset; left: unset; right: 300px; bottom: 150px;}
         .titulo {font: 600 45px/40px "Halbfett"; font-size: 2.8125rem;}
+
+        .banner-squad-viagens-mob { display: none; }
       }
 
       /* Dispositivos médios (tablets com 768px ou mais) */
@@ -2788,6 +2809,7 @@
         .bg-lolla-right {position: absolute; object-fit: unset; bottom: 130px;}
         .bg-lolla-left {position: absolute;  object-fit: unset; bottom: 150px;}
         .titulo {font: 600 45px/40px "Halbfett"; font-size: 2.8125rem;}
+        .banner-squad-viagens-mob { display: none; }
       }		
 
       /* Dispositivos large (desktops com 992px ou mais) */
@@ -2800,6 +2822,7 @@
         #carousel-tittle { font: 600 56px/56px "Halbfett"; font-size: 3.5rem; }
         #img-banner-lolla-transfer-mob { display: none; }
         .titulo {font: 600 45px/40px "Halbfett"; font-size: 2.8125rem;}
+        .banner-squad-viagens-mob { display: none; }
       }
 
       /* Dispositivos extra large (desktops grandes com 1200px ou mais) */
@@ -2812,6 +2835,7 @@
         #carousel-tittle { font: 600 56px/56px "Halbfett"; font-size: 3.5rem;}
         #img-banner-lolla-transfer-mob { display: none; }
         .titulo {font: 600 45px/40px "Halbfett"; font-size: 2.8125rem;}
+        .banner-squad-viagens-mob { display: none; }
       }
 
       /* Dispositivos extra extra large (desktops grandes com 1600px ou mais) */
@@ -2819,6 +2843,7 @@
         .carousel-caption { left: 22%; } 
         #img-banner-lolla-transfer-mob { display: none; }
         .titulo {font: 600 45px/40px "Halbfett"; font-size: 2.8125rem;}
+        .banner-squad-viagens-mob { display: none; }
       }
 
 
